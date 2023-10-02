@@ -44,7 +44,7 @@ const DonationCard = ({ donation }) => {
       </figure>
       <div className="card-body">
         <div className="p-14">
-          <h2 className="card-title text-2xl">{Description}</h2>
+          <h2 className="card-title text-3xl font-bold ">{Description}</h2>
           <p className="lg:text-xl">{more_details}</p>
         </div>
         <div className="card-actions absolute">

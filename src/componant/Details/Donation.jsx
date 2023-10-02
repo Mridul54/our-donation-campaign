@@ -31,7 +31,7 @@ const Donation = () => {
                  isshow? item.map(donation=><ShowingDonation  key={donation.id}donation={donation}></ShowingDonation> ) : item.slice(0,4).map(donation=><ShowingDonation  key={donation.id}donation={donation}></ShowingDonation> )
                 }
             </div>}
-            <button onClick={()=>setisshow(!isshow)} className="btn mx-auto btn-active btn-neutral  bg-green-500 w-[110px] h-[48px] rounded-lg mt-10">{isshow?'See Less':'See All'}</button>
+            <button onClick={()=>setisshow(!isshow)} className="btn btn-active btn-neutral mx-auto text-white text-lg bg-green-600 w-[110px] h-[48px] rounded-lg ml-[570px] mt-10 ">{isshow?'See Less':'See All'}</button>
 
                 
                 
