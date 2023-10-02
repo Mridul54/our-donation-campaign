@@ -8,7 +8,7 @@ const Banner = ({ searchQuery, onSearch,filterQuery,setFilterQuery }) => {
 
   const backgroundImageStyle = {
     backgroundImage: 'url("https://img.freepik.com/premium-photo/group-diverse-people-as-donation-community-service-volunteer_53876-38815.jpg?w=740")',
-    filter: 'brightness(20%)',
+    filter: 'brightness(15%)',
     height: '100%',
   };
 
@@ -24,6 +24,7 @@ const Banner = ({ searchQuery, onSearch,filterQuery,setFilterQuery }) => {
     color: 'white',
     fontSize: '2.5rem',
     fontWeight: 'bold',
+    margin:'0px 0px 30px 0px' 
   };
 
   const inputStyle = {
@@ -36,13 +37,16 @@ const Banner = ({ searchQuery, onSearch,filterQuery,setFilterQuery }) => {
   };
 
   const buttonStyle = {
-    background: '#4B5563',
+    background: '#e8290c',
     color: 'white',
     padding: '10px 20px',
     border: 'none',
     borderRadius: '0 4px 4px 0',
     cursor: 'pointer',
+    
   };
+
+  
 
   
   const [localSearchQuery, setLocalSearchQuery] = useState('');
@@ -69,7 +73,7 @@ const Banner = ({ searchQuery, onSearch,filterQuery,setFilterQuery }) => {
             onChange={(e) => setLocalSearchQuery(e.target.value)}
           />
           <button
-            className="btn btn-error"
+            className="btn btn-error "
             style={buttonStyle}
             onClick={handleSearch}
           >

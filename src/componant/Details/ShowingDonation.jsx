@@ -22,7 +22,8 @@ const ShowingDonation = ({ donation }) => {
   };
 
   return (
-    <div className='flex lg:font-bold lg:text-2xl md:text-sm'>
+    <div className=''>
+        <div className='flex lg:font-bold lg:text-2xl md:text-sm'>
       <div>
         <figure className='rounded-none'>
           <img className='lg:h-56 md:h-40 h-40 ' src={Picture} alt="Product" />
@@ -30,16 +31,17 @@ const ShowingDonation = ({ donation }) => {
       </div>
       <div className="card w-60 rounded-none p-2" style={cardStyle}>
         <div className="">
-          <h2 className="" style={descriptionStyle }>
+          <h2 className="text-lg bg my-4" style={descriptionStyle }>
             {Category}
           </h2>
-          <h1 className=' text-white lg:text-2xl md:text-xs'>{Description}</h1>
-          <h1 className='lg:text-2xl md:text-xs'>Price: {Price}</h1>
-          <button className="lg:text-2xl md:text-xs btn  " style={categoryStyle }>
+          <h1 className=' text-white lg:text-lg md:text-xs'>{Description}</h1>
+          <h1 className='lg:text-xl md:text-xs'> {Price}</h1>
+          <button className=" p-2 rounded-lg mt-5 lg:text-xl md:text-xs btn  " style={categoryStyle }>
             View Details
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };

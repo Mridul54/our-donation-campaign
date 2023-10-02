@@ -20,11 +20,11 @@ const DonationsCard = ({ donation }) => {
     <div>
       
       <Link to={`/donations/${id}`}>
-        <div className="card" style={cardStyle}>
+        <div className="card rounded-xl" style={cardStyle}>
           <figure><img src={Picture} alt="Product" /></figure>
           <div className="card-body">
-            <h2 className="card-title rounded-lg w-28 p-2" style={categoryStyle}>{Category}</h2>
-            <p className=" font-bold " style={descriptionStyle}>{Description}</p>
+            <h2 className="card-title rounded-lg w-20 text-center py-2 ml-5 my-4" style={categoryStyle}>{Category}</h2>
+            <p className=" font-bold pl-5 pb-4" style={descriptionStyle}>{Description}</p>
           </div>
         </div>
       </Link>

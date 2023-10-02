@@ -26,12 +26,12 @@ const Donation = () => {
     
     return (
         <div >
-            {nodata ? <p className="h-[80vh] flex justify-center items-center text-4xl ">{nodata}</p> : <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 m-auto">
+            {nodata ? <p className="h-[80vh] flex justify-center items-center text-4xl ">{nodata}</p> : <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 m-auto">
                 {
                  isshow? item.map(donation=><ShowingDonation  key={donation.id}donation={donation}></ShowingDonation> ) : item.slice(0,4).map(donation=><ShowingDonation  key={donation.id}donation={donation}></ShowingDonation> )
                 }
-                </div>}
-                <button onClick={()=>setisshow(!isshow)} className="btn mx-auto btn-active btn-neutral  ">{isshow?'See Less':'See More'}</button>
+            </div>}
+            <button onClick={()=>setisshow(!isshow)} className="btn mx-auto btn-active btn-neutral  bg-green-500 w-[110px] h-[48px] rounded-lg mt-10">{isshow?'See Less':'See All'}</button>
 
                 
                 

@@ -12,7 +12,7 @@ const Nav = () => {
                         <NavLink
                             to="/"
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "text-green-400 underline" : ""
+                                isPending ? "pending" : isActive ? "text-red-600 font-bold underline" : ""
                             }
                         >
                             Home
@@ -22,7 +22,7 @@ const Nav = () => {
                         <NavLink
                             to="/donation"
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "text-green-400 underline" : ""
+                                isPending ? "pending" : isActive ? "text-red-600 font-bold underline" : ""
                             }
                         >
                             Donation
@@ -32,7 +32,7 @@ const Nav = () => {
                         <NavLink
                             to="/statistics"
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "text-green-400 underline" : ""
+                                isPending ? "pending" : isActive ? "text-red-600 font-bold underline" : ""
                             }
                         >
                             Statistics

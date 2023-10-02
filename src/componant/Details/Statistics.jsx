@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Label } from 'recharts';
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+const COLORS = ['#FF444A', '#00C49F', '#FFBB28', '#FF8042'];
 
 const Statistics = () => {
   const [data, setData] = useState([]);
@@ -10,7 +10,7 @@ const Statistics = () => {
 
   useEffect(() => {
    
-    fetch('./data.json')
+    fetch('./donationdata.json')
       .then((res) => res.json())
       .then((jsonData) => {
         setData(jsonData);
@@ -65,11 +65,11 @@ const Statistics = () => {
       <div className='lg:flex gap-4 justify-center '>
         <div className='flex gap-3'>
          <h1>Total Donation</h1> 
-         <p className='border bg-emerald-400 h-4 w-52'></p>
+         <p className='border bg-red-400 h-4 w-52'></p>
         </div>
         <div className='flex gap-3 '>
         <h1>Your Donation</h1>
-        <p className='border bg-blue-500 h-4 w-52'></p>
+        <p className='border bg-emerald-400 h-4 w-52'></p>
         </div>
       </div>
     </div>
