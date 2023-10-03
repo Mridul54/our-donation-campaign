@@ -8,8 +8,9 @@ const Banner = ({ searchQuery, onSearch,filterQuery,setFilterQuery }) => {
 
   const backgroundImageStyle = {
     backgroundImage: 'url("https://img.freepik.com/premium-photo/group-diverse-people-as-donation-community-service-volunteer_53876-38815.jpg?w=740")',
-    filter: 'brightness(15%)',
+    filter: 'brightness(65%)',
     height: '100%',
+    
   };
 
   const textContainerStyle = {
