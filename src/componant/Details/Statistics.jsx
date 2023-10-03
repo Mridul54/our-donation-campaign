@@ -37,7 +37,7 @@ const Statistics = () => {
   return (
     <div>
      <div className='flex justify-center'>
-     <h2 className='text-2xl'>Your Donations Percentage: {percentageDonations}%</h2>
+     <h2 className='text-3xl'>Your Donations Percentage: {percentageDonations}%</h2>
      </div>
       <ResponsiveContainer width="100%" height={500}>
         <PieChart>
@@ -46,7 +46,7 @@ const Statistics = () => {
             cx="50%"
             cy="50%"
             labelLine={false}
-            outerRadius={80}
+            outerRadius={120}
             fill="#8884d8"
             dataKey="value"
           >
